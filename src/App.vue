@@ -8,7 +8,7 @@
            <inevntory></inevntory>
          </div>
          <div class="col-lg-4">
-           
+           <carft></carft>
          </div>
       </div>
     </div>
@@ -24,12 +24,13 @@
 
 import navBar from '@/components/navBar'
 import inevntory from '@/components/inevntory'
-
+import carft from '@/components/carft'
 export default {
   name: 'App',
   components: {
    navBar,
-   inevntory
+   inevntory,
+   carft
   }
 }
 </script>
