@@ -9,7 +9,7 @@
                <p class="card-text">This is a dummy text for for all div</p>
                 <div class="d-flex justify-content-between">
                    <a href="#" class="btn btn-info">{{ item.price }}</a>
-                   <button class="btn btn-outline-success">+ Add</button>
+                   <button @click="addTocart(item)" class="btn btn-outline-success">+ Add</button>
                 </div>
                </div>
             </div>
@@ -20,7 +20,12 @@
 
 <script>
 export default {
-   props:['items']
+   props:['items'],
+   methods:{
+      addTocart(item){
+         this.$emit('AddItemOnCart', item)
+      }
+   }
 }
 </script>
 

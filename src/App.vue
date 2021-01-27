@@ -7,11 +7,11 @@
       <div class="row">
         <div class="col-lg-8">
            <!-- inventory section  -->
-          <inevntory :items='items'></inevntory>
+          <inevntory @AddItemOnCart="addCartItem" :items='items'></inevntory>
         </div>
         <div class="col-lg-4">
            <!-- cart section  -->
-          <carft :item= 'cart'></carft>
+          <carft :items='cart'></carft>
         </div>
       </div>
     </div>
@@ -39,6 +39,11 @@ export default {
   },
   mounted() {
     this.items = data;
+  },
+  methods: {
+     addCartItem(item){
+        this.cart.push(item);
+     }
   },
 };
 </script>
