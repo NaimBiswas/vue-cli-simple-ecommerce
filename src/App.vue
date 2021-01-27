@@ -8,13 +8,7 @@
            <inevntory></inevntory>
          </div>
          <div class="col-lg-4">
-           <table class="table table-bordered">
-              <tr>
-                 <td>Name</td>
-                 <td>Price</td>
-              </tr>
-              
-           </table>
+           
          </div>
       </div>
     </div>
