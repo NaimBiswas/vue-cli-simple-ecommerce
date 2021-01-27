@@ -61,7 +61,13 @@ C/O https://placeholder.com/" alt="">
             </div>
          </div>
          <div class="col-lg-4">
-            Card
+           <table class="table table-bordered">
+              <tr>
+                 <td>Name</td>
+                 <td>Price</td>
+              </tr>
+              
+           </table>
          </div>
       </div>
     </div>
