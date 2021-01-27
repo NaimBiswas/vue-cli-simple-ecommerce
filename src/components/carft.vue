@@ -13,7 +13,7 @@
       </tr>
       <tr>
          <td class="text-center">Total</td>
-         <td>$120</td>
+         <td>${{ TotaPrice }}</td>
       </tr>
     </table>
   </div>
@@ -21,7 +21,16 @@
 
 <script>
 export default {
-   props:['items']
+   props:['items'],
+   computed:{
+      TotaPrice() {
+        var total = 0 
+        this.items.forEach(item => {
+           total += parseFloat(item.price);
+        });
+        return total;
+      },
+   }
 };
 </script>
 

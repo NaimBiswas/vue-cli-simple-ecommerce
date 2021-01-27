@@ -8,7 +8,7 @@
                <h4 class="card-title">{{ item.title }}</h4>
                <p class="card-text">This is a dummy text for for all div</p>
                 <div class="d-flex justify-content-between">
-                   <a href="#" class="btn btn-info">{{ item.price }}</a>
+                   <a href="#" class="btn btn-info">${{ item.price }}</a>
                    <button @click="addTocart(item)" class="btn btn-outline-success">+ Add</button>
                 </div>
                </div>
