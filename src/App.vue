@@ -32,7 +32,7 @@
          <div class="col-lg-8">
             <div class="row">
              <div class="card border-primary">
-               <img class="card-img-top" src="https://via.placeholder.com/150
+               <img class="card-img-top" src="https://via.placeholder.com/240
 C/O https://placeholder.com/" alt="">
                <div class="card-body">
                  <h4 class="card-title">Title</h4>
