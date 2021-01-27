@@ -6,7 +6,4 @@ import popper from '@popperjs/core'
 window.jquery = jquery
 window.bootstrap = bootstrap
 window.popper = popper
-
-
-
 createApp(App).mount('#app')
