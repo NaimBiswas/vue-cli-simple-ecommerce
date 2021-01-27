@@ -25,6 +25,11 @@ import carft from "@/components/carft";
 import data from '@/data'
 export default {
   name: "App",
+  data() {
+     return {
+        items: [],
+     }
+  },
   components: {
     navBar,
     inevntory,
@@ -32,7 +37,7 @@ export default {
    
   },
   mounted() {
-    console.log(data);
+    this.items = data;
   },
 };
 </script>
