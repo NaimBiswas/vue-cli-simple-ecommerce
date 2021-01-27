@@ -1,6 +1,6 @@
 <template>
  <div class="">
-    
+    <navBar></navBar>
    
     <div class="container mt-4">
        <div class="row">
@@ -56,12 +56,12 @@ C/O https://placeholder.com/" alt="">
 
 
 
-
+import navBar from '@/components/navBar'
 
 export default {
   name: 'App',
   components: {
- 
+   navBar
   }
 }
 </script>
