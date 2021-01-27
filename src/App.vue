@@ -1,7 +1,7 @@
 <template>
   <div class="">
      <!-- Header Nav Bar Section  -->
-    <navBar></navBar>
+    <navBar @search="theResult"></navBar>
 
     <div class="container mt-4">
       <div class="row">
@@ -46,6 +46,11 @@ export default {
      },
      RemoveItem(index){
         this.cart.splice(index, 1)
+     },
+     theResult(keyWord){
+       this.items = data.filter(item =>{
+          return item.title.toLowerCase().indexOf(keyWord.toLowerCase()) !== -1
+        });
      }
   },
 };
