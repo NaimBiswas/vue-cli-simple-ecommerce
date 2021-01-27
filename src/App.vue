@@ -22,12 +22,17 @@
 import navBar from "@/components/navBar";
 import inevntory from "@/components/inevntory";
 import carft from "@/components/carft";
+import data from '@/data'
 export default {
   name: "App",
   components: {
     navBar,
     inevntory,
     carft,
+   
+  },
+  mounted() {
+    console.log(data);
   },
 };
 </script>
