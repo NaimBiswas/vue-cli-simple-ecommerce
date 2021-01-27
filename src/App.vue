@@ -11,7 +11,7 @@
         </div>
         <div class="col-lg-4">
            <!-- cart section  -->
-          <carft></carft>
+          <carft :item= 'cart'></carft>
         </div>
       </div>
     </div>
@@ -28,6 +28,7 @@ export default {
   data() {
      return {
         items: [],
+        cart: [],
      }
   },
   components: {
