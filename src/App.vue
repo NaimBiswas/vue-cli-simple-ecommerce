@@ -11,7 +11,7 @@
         </div>
         <div class="col-lg-4">
            <!-- cart section  -->
-          <carft :items='cart'></carft>
+          <carft @RemoveFromCart="RemoveItem" :items='cart'></carft>
         </div>
       </div>
     </div>
@@ -43,6 +43,9 @@ export default {
   methods: {
      addCartItem(item){
         this.cart.push(item);
+     },
+     RemoveItem(index){
+        this.cart.splice(index, 1)
      }
   },
 };

@@ -9,7 +9,10 @@
        </tr>
       <tr v-for="(item, index) in items" :key="index">
         <td>{{ item.title }}</td>
-        <td>{{ item.price }}</td>
+        <td class="text-center">
+           {{ item.price }}  
+           <button @click="RemoveToItem(index)" class="btn btn-danger btn-md ml-4 float-right">Remove</button>
+         </td>
       </tr>
       <tr>
          <td class="text-center">Total</td>
@@ -22,6 +25,11 @@
 <script>
 export default {
    props:['items'],
+    methods: {
+         RemoveToItem(index){
+            this.$emit('RemoveFromCart', index)
+         }
+      },
    computed:{
       TotaPrice() {
         var total = 0 
@@ -30,6 +38,7 @@ export default {
         });
         return total;
       },
+     
    }
 };
 </script>
