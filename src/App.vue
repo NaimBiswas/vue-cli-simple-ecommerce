@@ -1,13 +1,16 @@
 <template>
   <div class="">
+     <!-- Header Nav Bar Section  -->
     <navBar></navBar>
 
     <div class="container mt-4">
       <div class="row">
         <div class="col-lg-8">
+           <!-- inventory section  -->
           <inevntory></inevntory>
         </div>
         <div class="col-lg-4">
+           <!-- cart section  -->
           <carft></carft>
         </div>
       </div>
