@@ -34,7 +34,7 @@ C/O https://placeholder.com/" alt="">
 
 <script>
 export default {
-
+   props:['items']
 }
 </script>
 

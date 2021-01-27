@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-lg-8">
            <!-- inventory section  -->
-          <inevntory></inevntory>
+          <inevntory :items='items'></inevntory>
         </div>
         <div class="col-lg-4">
            <!-- cart section  -->
